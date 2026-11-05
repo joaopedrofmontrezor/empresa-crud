@@ -3,10 +3,10 @@
     $usuario = "root";
     $senha ="";
     $bd = "empresa";
-    $result =mysqli_connect($servidor,$usuario,$senha,$bd);
-    if($result){
+    $conexao =mysqli_connect($servidor,$usuario,$senha,$bd);
+    if($conexao){
         echo "Conexão realizada com sucesso.";
     }else{
-        echo mysqli_connect_error($result);
+        echo mysqli_connect_error($conexao);
     }
 ?>
