@@ -1,10 +1,10 @@
 <?php
 
-$nome = "João";
-$email = "jp.montrezor@gmail.com";
-$cargo = "DBA";
-$salario = 1000;
-$admissao = "2026-11-05";
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$cargo = $_POST['cargo'];
+$salario = $_POST['salario'];
+$admissao = $_POST['admissao'];
 
 $sql = "insert into funcionario (nome, email, cargo, salario,data_admissao)
 values ('$nome', '$email', '$cargo', $salario, '$admissao')";
